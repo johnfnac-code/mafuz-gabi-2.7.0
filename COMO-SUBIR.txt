@@ -1,0 +1,19 @@
+GABI 2.4.0 · COMO SUBIR (5 minutos)
+
+1. Descompacte este zip. Abra a pasta criada: dentro dela estão src, assets,
+   conhecimento, Dockerfile e package.json.
+
+2. GitHub > New repository > nome: mafuz-agente-2-4 > Private > Create.
+   Na página do repositório vazio, clique em "uploading an existing file".
+   Selecione TUDO que está dentro da pasta (Ctrl+A) e ARRASTE para a página.
+   Confira que aparecem caminhos como src/server.js. Commit changes.
+
+3. Railway > abra o serviço ANTIGO da Gabi (o que tem o domínio
+   mafuz-agente-production.up.railway.app e as variáveis).
+   Settings > Source > Disconnect > Connect Repo > mafuz-agente-2-4 > main.
+   NÃO crie serviço novo: as chaves, as conversas e o domínio estão no antigo.
+
+4. Deployments: espere o deploy do topo ficar Active (2 a 4 min).
+
+5. Abra https://mafuz-agente-production.up.railway.app/health
+   Tem que mostrar "versao": "2.4.0" e "whatsapp": "conectado".
